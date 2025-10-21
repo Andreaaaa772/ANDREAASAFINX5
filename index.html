@@ -1,69 +1,130 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Hiking Experience on Mount Salak — Andrea Asafin (X5)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hiking Experience - Mount Salak</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #375a7f, #4b79a1);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 25px 0;
+    }
+
+    .tag {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .tag:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      padding: 30px;
+      justify-items: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      width: 90%;
+      max-width: 380px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 15px;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.8;
+      background: rgba(0, 0, 0, 0.3);
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-  <div class="stars"></div>
-  <div class="container">
-    <header>
-      <h1>My Hiking Experience on Mount Salak</h1>
-      <div class="meta">By Andrea Asafin — Class X5 | Mount Salak, West Java</div>
-    </header>
 
-    <section class="story">
-      <p><strong>Orientation:</strong><br>
-      Last holiday, I went on an amazing adventure hiking Mount Salak with my close friends. We carefully prepared our equipment—raincoats, food, flashlights, and camping gear. The morning sky was cloudy, yet the cool wind made our steps lighter. Our goal was to reach the summit and feel the beauty of nature together.</p>
+  <header>🏔️ My Hiking Experience on Mount Salak</header>
 
-      <p><strong>Events:</strong><br>
-      We began our hike from the Pasir Reungit trail. The first path was surrounded by tall trees and the sound of chirping birds. As we climbed higher, the trail became steeper and more challenging. At one point, we reached the famous <em>Tanjakan Wayahna</em>, where ropes were needed to climb up. It was tough but exciting! After several hours of hiking, we finally reached <strong>Puncak Prabu</strong> at 2,180 meters above sea level. The view was breathtaking—the fog rolled over green hills and we could even see distant city lights. We took photos, shared snacks, and celebrated our success. That night, we met a friendly dog at camp who stayed with us, making the experience even more memorable.</p>
+  <div class="tags">
+    <div class="tag">🏕️ Night Camp</div>
+    <div class="tag">🐾 Trail Dog</div>
+    <div class="tag">🧗 Rope Climb</div>
+    <div class="tag">📸 Summit Memories</div>
+  </div>
 
-      <p><strong>Reorientation:</strong><br>
-      The hike to Mount Salak taught me the meaning of teamwork, patience, and respect for nature. Even though it was exhausting, I came home proud and grateful. It reminded me that every hard journey leads to something beautiful.</p>
-    </section>
-
-    <div class="chips">
-      <div class="chip">🌄 2,180 m Summit</div>
-      <div class="chip">🧗‍♂️ Rope Climb Challenge</div>
-      <div class="chip">🐾 Trail Dog Friend</div>
-      <div class="chip">✨ Night Camp Adventure</div>
+  <div class="gallery">
+    <div class="card">
+      <img src="salak1.jpg" alt="Summit sign Puncak Prabu">
+      <h3>Puncak Prabu — The Top of Our Journey</h3>
     </div>
 
-    <section class="gallery">
-      <div class="photo-card">
-        <img src="images/salak1.jpg" alt="Summit sign Puncak Prabu" onclick="openLightbox(this)">
-        <div class="caption">Puncak Prabu — The Top of Our Journey</div>
-      </div>
-      <div class="photo-card">
-        <img src="images/salak2.jpg" alt="Climbing Tanjakan Wayahna" onclick="openLightbox(this)">
-        <div class="caption">Tanjakan Wayahna — Rope Climb Adventure</div>
-      </div>
-      <div class="photo-card">
-        <img src="images/salak3.jpg" alt="Night camp with friends and dog" onclick="openLightbox(this)">
-        <div class="caption">Night Camp — New Friends Under the Stars</div>
-      </div>
-    </section>
+    <div class="card">
+      <img src="salak2.jpg" alt="Climbing Tanjakan Wayahna">
+      <h3>Tanjakan Wayahna — Rope Climb Adventure</h3>
+    </div>
 
-    <footer>
-      © 2025 Andrea Asafin X5 | Designed with animated background and interactive gallery
-    </footer>
+    <div class="card">
+      <img src="salak3.jpg" alt="Night camp with friends and dog">
+      <h3>Night Camp — New Friends Under the Stars</h3>
+    </div>
   </div>
 
-  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <img id="lbImg" src="" alt="Expanded view">
-  </div>
+  <footer>
+    © 2025 Andrea Asafin X5 | Designed with 💙 for an unforgettable hiking story
+  </footer>
 
-  <script>
-    function openLightbox(img){
-      document.getElementById('lightbox').style.display='flex';
-      document.getElementById('lbImg').src=img.src;
-    }
-    function closeLightbox(){document.getElementById('lightbox').style.display='none';}
-    document.querySelectorAll('img').forEach(i=>i.loading='lazy');
-  </script>
 </body>
 </html>
